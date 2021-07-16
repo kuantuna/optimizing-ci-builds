@@ -15,3 +15,15 @@ I don't know why, but there are projects written more than once in the data.csv 
 **2. pom.xml in root directory**
 
 The written python script only searches for pom.xml files in the root directory. Maybe there are pom.xml files in other directories as well.
+
+## Improvements
+
+**1. Add check for Cobertura**
+
+**2. Fix data filtering**
+
+**3. Add check for Gradle as well**
+
+**4. Fix data.csv table as repo_name, repo_data, build_tool, ci_tool**
+
+**5. Check for Travis and Github Actions
