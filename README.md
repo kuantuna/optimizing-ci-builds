@@ -24,6 +24,6 @@ The written python script only searches for pom.xml files in the root directory.
 
 **3. Add check for Gradle as well**
 
-**4. Fix data.csv table as repo_name, repo_data, build_tool, ci_tool**
+**4. Fix data.csv table as repo_name, repo_link, build_tool, ci_tool**
 
-**5. Check for Travis and Github Actions
+**5. Check for Travis and Github Actions**
