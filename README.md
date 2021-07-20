@@ -30,5 +30,15 @@
 
 2. https://blog.codecentric.de/en/2021/02/github-actions-pipeline/
 
-3. https://graciano.dev/2020/08/25/use-jacoco-and-github-actions-to-improve-code-coverage/
+3. https://docs.codecov.com/docs/quick-start
+
+4. https://github.com/codecov/example-java
+
+5. https://github.com/codecov/example-java-maven
+
+6. https://github.com/codecov/example-gradle
+
+7. https://anatolyd.medium.com/distribute-maven-tests-in-github-actions-get-coverage-with-jacoco-bf7eb4ea90b9
+
+8. https://ucsb-cs156.github.io/tutorials/
 
