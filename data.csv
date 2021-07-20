@@ -1,119 +1,101 @@
-name,link,build-tool,coverage-tool
-Activiti/Activiti,https://github.com/Activiti/Activiti,maven,jacoco
-CrawlScript/WebCollector,https://github.com/CrawlScript/WebCollector,maven,cobertura
-DSpace/DSpace,https://github.com/DSpace/DSpace,maven,jacoco
-DTStack/flinkx,https://github.com/DTStack/flinkx,maven,jacoco
-FasterXML/jackson-databind,https://github.com/FasterXML/jackson-databind,maven,jacoco
-GoogleContainerTools/jib,https://github.com/GoogleContainerTools/jib,gradle,jacoco
-JSQLParser/JSqlParser,https://github.com/JSQLParser/JSqlParser,maven,cobertura
-JSQLParser/JSqlParser,https://github.com/JSQLParser/JSqlParser,maven,jacoco
-JabRef/jabref,https://github.com/JabRef/jabref,gradle,jacoco
-JanusGraph/janusgraph,https://github.com/JanusGraph/janusgraph,maven,cobertura
-JanusGraph/janusgraph,https://github.com/JanusGraph/janusgraph,maven,jacoco
-Javen205/IJPay,https://github.com/Javen205/IJPay,maven,cobertura
-MicrosoftDocs/pipelines-java,https://github.com/MicrosoftDocs/pipelines-java,maven,jacoco
-NationalSecurityAgency/ghidra,https://github.com/NationalSecurityAgency/ghidra,gradle,jacoco
-Netflix/Hystrix,https://github.com/Netflix/Hystrix,gradle,cobertura
-Netflix/SimianArmy,https://github.com/Netflix/SimianArmy,gradle,cobertura
-Netflix/conductor,https://github.com/Netflix/conductor,gradle,jacoco
-OpenRefine/OpenRefine,https://github.com/OpenRefine/OpenRefine,maven,jacoco
-ReactiveX/RxJava,https://github.com/ReactiveX/RxJava,gradle,jacoco
-SERG-Delft/mooc-software-testing,https://github.com/SERG-Delft/mooc-software-testing,maven,jacoco
-TeamAmaze/AmazeFileManager,https://github.com/TeamAmaze/AmazeFileManager,gradle,jacoco
-alibaba/canal,https://github.com/alibaba/canal,maven,jacoco
-alibaba/druid,https://github.com/alibaba/druid,maven,jacoco
-alibaba/fastjson,https://github.com/alibaba/fastjson,maven,jacoco
-alibaba/nacos,https://github.com/alibaba/nacos,maven,jacoco
-alibaba/spring-cloud-alibaba,https://github.com/alibaba/spring-cloud-alibaba,maven,jacoco
-alibaba/transmittable-thread-local,https://github.com/alibaba/transmittable-thread-local,maven,jacoco
-apache/activemq,https://github.com/apache/activemq,maven,cobertura
-apache/commons-lang,https://github.com/apache/commons-lang,maven,jacoco
-apache/dubbo,https://github.com/apache/dubbo,maven,jacoco
-apache/dubbo-admin,https://github.com/apache/dubbo-admin,maven,jacoco
-apache/fineract,https://github.com/apache/fineract,gradle,jacoco
-apache/groovy,https://github.com/apache/groovy,gradle,cobertura
-apache/groovy,https://github.com/apache/groovy,gradle,jacoco
-apache/hbase,https://github.com/apache/hbase,maven,jacoco
-apache/hudi,https://github.com/apache/hudi,maven,jacoco
-apache/incubator-shenyu,https://github.com/apache/incubator-shenyu,maven,jacoco
-apache/kafka,https://github.com/apache/kafka,gradle,jacoco
-apache/mahout,https://github.com/apache/mahout,maven,jacoco
-apache/parquet-mr,https://github.com/apache/parquet-mr,maven,cobertura
-apache/phoenix,https://github.com/apache/phoenix,maven,jacoco
-apache/pulsar,https://github.com/apache/pulsar,maven,jacoco
-apache/rocketmq,https://github.com/apache/rocketmq,maven,jacoco
-apache/shardingsphere,https://github.com/apache/shardingsphere,maven,cobertura
-apache/shardingsphere,https://github.com/apache/shardingsphere,maven,jacoco
-apache/shardingsphere-elasticjob,https://github.com/apache/shardingsphere-elasticjob,maven,cobertura
-apache/shardingsphere-elasticjob,https://github.com/apache/shardingsphere-elasticjob,maven,jacoco
-apache/shiro,https://github.com/apache/shiro,maven,jacoco
-apereo/cas,https://github.com/apereo/cas,gradle,jacoco
-azkaban/azkaban,https://github.com/azkaban/azkaban,gradle,jacoco
-baomidou/mybatis-plus-samples,https://github.com/baomidou/mybatis-plus-samples,maven,cobertura
-ben-manes/caffeine,https://github.com/ben-manes/caffeine,gradle,jacoco
-checkstyle/checkstyle,https://github.com/checkstyle/checkstyle,maven,jacoco
-chewiebug/GCViewer,https://github.com/chewiebug/GCViewer,maven,jacoco
-code4craft/webmagic,https://github.com/code4craft/webmagic,maven,jacoco
-codecentric/spring-boot-admin,https://github.com/codecentric/spring-boot-admin,maven,jacoco
-codingapi/tx-lcn,https://github.com/codingapi/tx-lcn,maven,jacoco
-commons-app/apps-android-commons,https://github.com/commons-app/apps-android-commons,gradle,jacoco
-ctripcorp/apollo,https://github.com/ctripcorp/apollo,maven,cobertura
-ctripcorp/apollo,https://github.com/ctripcorp/apollo,maven,jacoco
-dromara/hmily,https://github.com/dromara/hmily,maven,cobertura
-dropwizard/metrics,https://github.com/dropwizard/metrics,maven,jacoco
-eclipse/jetty.project,https://github.com/eclipse/jetty.project,maven,jacoco
-edureka-git/DevOpsClassCodes,https://github.com/edureka-git/DevOpsClassCodes,maven,cobertura
-edureka-git/DevOpsClassCodes,https://github.com/edureka-git/DevOpsClassCodes,maven,jacoco
-fabric8io/kubernetes-client,https://github.com/fabric8io/kubernetes-client,maven,jacoco
-federicoiosue/Omni-Notes,https://github.com/federicoiosue/Omni-Notes,gradle,jacoco
-flowable/flowable-engine,https://github.com/flowable/flowable-engine,maven,jacoco
-fossasia/phimpme-android,https://github.com/fossasia/phimpme-android,gradle,jacoco
-fossasia/susi_server,https://github.com/fossasia/susi_server,gradle,jacoco
-geotools/geotools,https://github.com/geotools/geotools,maven,jacoco
-googlemaps/google-maps-services-java,https://github.com/googlemaps/google-maps-services-java,gradle,jacoco
-grpc/grpc-java,https://github.com/grpc/grpc-java,gradle,jacoco
-hapifhir/hapi-fhir,https://github.com/hapifhir/hapi-fhir,maven,cobertura
-hapifhir/hapi-fhir,https://github.com/hapifhir/hapi-fhir,maven,jacoco
-iluwatar/java-design-patterns,https://github.com/iluwatar/java-design-patterns,maven,jacoco
-intuit/karate,https://github.com/intuit/karate,maven,jacoco
-javaparser/javaparser,https://github.com/javaparser/javaparser,maven,jacoco
-jitsi/jitsi-videobridge,https://github.com/jitsi/jitsi-videobridge,maven,jacoco
-justauth/JustAuth,https://github.com/justauth/JustAuth,maven,cobertura
-justauth/JustAuth,https://github.com/justauth/JustAuth,maven,jacoco
-kiegroup/drools,https://github.com/kiegroup/drools,maven,jacoco
-ksoichiro/Android-ObservableScrollView,https://github.com/ksoichiro/Android-ObservableScrollView,gradle,jacoco
-line/line-bot-sdk-java,https://github.com/line/line-bot-sdk-java,gradle,jacoco
-microservices-demo/carts,https://github.com/microservices-demo/carts,maven,jacoco
-mission-peace/interview,https://github.com/mission-peace/interview,gradle,jacoco
-mluukkai/OtmTodoApp,https://github.com/mluukkai/OtmTodoApp,maven,jacoco
-mongodb/mongo-java-driver,https://github.com/mongodb/mongo-java-driver,gradle,jacoco
-mybatis/mybatis-3,https://github.com/mybatis/mybatis-3,maven,jacoco
-netty/netty,https://github.com/netty/netty,maven,jacoco
-pinpoint-apm/pinpoint,https://github.com/pinpoint-apm/pinpoint,maven,jacoco
-pmd/pmd,https://github.com/pmd/pmd,maven,jacoco
-prestodb/presto,https://github.com/prestodb/presto,maven,jacoco
-qos-ch/logback,https://github.com/qos-ch/logback,maven,cobertura
-redis/jedis,https://github.com/redis/jedis,maven,jacoco
-resilience4j/resilience4j,https://github.com/resilience4j/resilience4j,gradle,jacoco
-resteasy/Resteasy,https://github.com/resteasy/Resteasy,maven,jacoco
-roboguice/roboguice,https://github.com/roboguice/roboguice,maven,jacoco
-se-edu/addressbook-level4,https://github.com/se-edu/addressbook-level4,gradle,jacoco
-seata/seata,https://github.com/seata/seata,maven,jacoco
-seata/seata-samples,https://github.com/seata/seata-samples,maven,jacoco
-shopizer-ecommerce/shopizer,https://github.com/shopizer-ecommerce/shopizer,maven,jacoco
-sofastack/sofa-rpc,https://github.com/sofastack/sofa-rpc,maven,jacoco
-spring-cloud/spring-cloud-netflix,https://github.com/spring-cloud/spring-cloud-netflix,maven,jacoco
-spring-petclinic/spring-framework-petclinic,https://github.com/spring-petclinic/spring-framework-petclinic,maven,jacoco
-spring-projects/spring-integration,https://github.com/spring-projects/spring-integration,gradle,jacoco
-spring-projects/spring-kafka,https://github.com/spring-projects/spring-kafka,gradle,jacoco
-springfox/springfox,https://github.com/springfox/springfox,gradle,jacoco
-swagger-api/swagger-core,https://github.com/swagger-api/swagger-core,maven,jacoco
-thinkaurelius/titan,https://github.com/thinkaurelius/titan,maven,cobertura
-thinkaurelius/titan,https://github.com/thinkaurelius/titan,maven,jacoco
-tronprotocol/java-tron,https://github.com/tronprotocol/java-tron,gradle,jacoco
-tuguangquan/mybatis,https://github.com/tuguangquan/mybatis,maven,cobertura
-undertow-io/undertow,https://github.com/undertow-io/undertow,maven,jacoco
-wildfly/wildfly,https://github.com/wildfly/wildfly,maven,cobertura
-wildfly/wildfly,https://github.com/wildfly/wildfly,maven,jacoco
-xuhuisheng/lemon,https://github.com/xuhuisheng/lemon,maven,jacoco
-zxing/zxing,https://github.com/zxing/zxing,maven,jacoco
+name,link,build-tool,coverage-tool,ci-tool
+Activiti/Activiti,https://github.com/Activiti/Activiti,maven,jacoco,github actions
+alibaba/arthas,https://github.com/alibaba/arthas,maven,jacoco,github actions/travis
+alibaba/canal,https://github.com/alibaba/canal,maven,jacoco,travis
+alibaba/druid,https://github.com/alibaba/druid,maven,jacoco,travis
+alibaba/fastjson,https://github.com/alibaba/fastjson,maven,jacoco,github actions/travis
+alibaba/jvm-sandbox,https://github.com/alibaba/jvm-sandbox,maven,cobertura,travis
+alibaba/nacos,https://github.com/alibaba/nacos,maven,jacoco,github actions/travis
+alibaba/Sentinel,https://github.com/alibaba/Sentinel,maven,jacoco,github actions
+alibaba/transmittable-thread-local,https://github.com/alibaba/transmittable-thread-local,maven,jacoco,travis
+Alluxio/alluxio,https://github.com/Alluxio/alluxio,maven,jacoco,github actions
+apache/commons-lang,https://github.com/apache/commons-lang,maven,jacoco,github actions/travis
+apache/dolphinscheduler,https://github.com/apache/dolphinscheduler,maven,jacoco/cobertura,github actions
+apache/druid,https://github.com/apache/druid,maven,jacoco,travis
+apache/dubbo-admin,https://github.com/apache/dubbo-admin,maven,jacoco,github actions
+apache/groovy,https://github.com/apache/groovy,gradle,jacoco/cobertura,github actions/travis
+apache/hudi,https://github.com/apache/hudi,maven,jacoco,github actions/travis
+apache/incubator-shenyu,https://github.com/apache/incubator-shenyu,maven,jacoco,github actions
+apache/kylin,https://github.com/apache/kylin,maven,jacoco,github actions/travis
+apache/pulsar,https://github.com/apache/pulsar,maven,jacoco,github actions
+apache/rocketmq,https://github.com/apache/rocketmq,maven,jacoco,github actions/travis
+apache/shardingsphere,https://github.com/apache/shardingsphere,maven,jacoco/cobertura,github actions/travis
+apache/shardingsphere-elasticjob,https://github.com/apache/shardingsphere-elasticjob,maven,jacoco/cobertura,github actions/travis
+apache/shiro,https://github.com/apache/shiro,maven,jacoco,github actions
+apache/skywalking,https://github.com/apache/skywalking,maven,cobertura,github actions
+apache/zeppelin,https://github.com/apache/zeppelin,maven,cobertura,github actions
+apereo/cas,https://github.com/apereo/cas,gradle,jacoco,github actions/travis
+azkaban/azkaban,https://github.com/azkaban/azkaban,gradle,jacoco,travis
+baomidou/mybatis-plus-samples,https://github.com/baomidou/mybatis-plus-samples,maven,cobertura,travis
+ben-manes/caffeine,https://github.com/ben-manes/caffeine,gradle,jacoco,github actions
+brettwooldridge/HikariCP,https://github.com/brettwooldridge/HikariCP,maven,jacoco,github actions/travis
+checkstyle/checkstyle,https://github.com/checkstyle/checkstyle,maven,jacoco,github actions/travis
+citerus/dddsample-core,https://github.com/citerus/dddsample-core,maven,cobertura,travis
+codecentric/spring-boot-admin,https://github.com/codecentric/spring-boot-admin,maven,jacoco,github actions
+codingapi/tx-lcn,https://github.com/codingapi/tx-lcn,maven,jacoco,travis
+commons-app/apps-android-commons,https://github.com/commons-app/apps-android-commons,gradle,jacoco,github actions/travis
+ctripcorp/apollo,https://github.com/ctripcorp/apollo,maven,jacoco/cobertura,github actions
+dromara/hmily,https://github.com/dromara/hmily,maven,cobertura,github actions
+dromara/hutool,https://github.com/dromara/hutool,maven,cobertura,travis
+dropwizard/metrics,https://github.com/dropwizard/metrics,maven,jacoco,github actions
+DSpace/DSpace,https://github.com/DSpace/DSpace,maven,jacoco,github actions
+fabric8io/kubernetes-client,https://github.com/fabric8io/kubernetes-client,maven,jacoco,github actions
+federicoiosue/Omni-Notes,https://github.com/federicoiosue/Omni-Notes,gradle,jacoco,github actions
+flowable/flowable-engine,https://github.com/flowable/flowable-engine,maven,jacoco,github actions
+fossasia/phimpme-android,https://github.com/fossasia/phimpme-android,gradle,jacoco,travis
+GoogleContainerTools/jib,https://github.com/GoogleContainerTools/jib,gradle,jacoco,github actions
+grpc/grpc-java,https://github.com/grpc/grpc-java,gradle,jacoco,github actions
+hapifhir/hapi-fhir,https://github.com/hapifhir/hapi-fhir,maven,jacoco/cobertura,github actions
+iluwatar/java-design-patterns,https://github.com/iluwatar/java-design-patterns,maven,jacoco,github actions
+intuit/karate,https://github.com/intuit/karate,maven,jacoco,github actions
+JabRef/jabref,https://github.com/JabRef/jabref,gradle,jacoco,github actions
+JanusGraph/janusgraph,https://github.com/JanusGraph/janusgraph,maven,jacoco/cobertura,github actions
+Javen205/IJPay,https://github.com/Javen205/IJPay,maven,cobertura,travis
+JSQLParser/JSqlParser,https://github.com/JSQLParser/JSqlParser,maven,jacoco/cobertura,travis
+justauth/JustAuth,https://github.com/justauth/JustAuth,maven,jacoco/cobertura,travis
+kiegroup/drools,https://github.com/kiegroup/drools,maven,jacoco,github actions
+knightliao/disconf,https://github.com/knightliao/disconf,maven,cobertura,travis
+ksoichiro/Android-ObservableScrollView,https://github.com/ksoichiro/Android-ObservableScrollView,gradle,jacoco,travis
+lets-blade/blade,https://github.com/lets-blade/blade,maven,cobertura,travis
+liquibase/liquibase,https://github.com/liquibase/liquibase,maven,jacoco,github actions
+microservices-demo/carts,https://github.com/microservices-demo/carts,maven,jacoco,github actions/travis
+NanoHttpd/nanohttpd,https://github.com/NanoHttpd/nanohttpd,maven,jacoco,travis
+Netflix/conductor,https://github.com/Netflix/conductor,gradle,jacoco,github actions
+Netflix/SimianArmy,https://github.com/Netflix/SimianArmy,gradle,cobertura,travis
+netty/netty,https://github.com/netty/netty,maven,jacoco,github actions
+nextcloud/android,https://github.com/nextcloud/android,gradle,jacoco,github actions
+OpenAPITools/openapi-generator,https://github.com/OpenAPITools/openapi-generator,maven,jacoco,github actions/travis
+openid/AppAuth-Android,https://github.com/openid/AppAuth-Android,gradle,jacoco,github actions
+pinpoint-apm/pinpoint,https://github.com/pinpoint-apm/pinpoint,maven,jacoco,github actions
+pmd/pmd,https://github.com/pmd/pmd,maven,jacoco,github actions
+qos-ch/logback,https://github.com/qos-ch/logback,maven,cobertura,travis
+Rajawali/Rajawali,https://github.com/Rajawali/Rajawali,gradle,jacoco,github actions
+ReactiveX/RxJava,https://github.com/ReactiveX/RxJava,gradle,jacoco,github actions
+redis/jedis,https://github.com/redis/jedis,maven,jacoco,github actions
+resilience4j/resilience4j,https://github.com/resilience4j/resilience4j,gradle,jacoco,github actions
+sarxos/webcam-capture,https://github.com/sarxos/webcam-capture,maven,cobertura,travis
+se-edu/addressbook-level4,https://github.com/se-edu/addressbook-level4,gradle,jacoco,travis
+searchbox-io/Jest,https://github.com/searchbox-io/Jest,maven,cobertura,travis
+seata/seata,https://github.com/seata/seata,maven,jacoco,github actions/travis
+seata/seata-samples,https://github.com/seata/seata-samples,maven,jacoco,github actions/travis
+SERG-Delft/mooc-software-testing,https://github.com/SERG-Delft/mooc-software-testing,maven,jacoco,github actions
+sofastack/sofa-rpc,https://github.com/sofastack/sofa-rpc,maven,jacoco,github actions/travis
+spring-cloud/spring-cloud-sleuth,https://github.com/spring-cloud/spring-cloud-sleuth,maven,jacoco,github actions
+spring-petclinic/spring-framework-petclinic,https://github.com/spring-petclinic/spring-framework-petclinic,maven,jacoco,travis
+spring-projects/spring-batch,https://github.com/spring-projects/spring-batch,maven,jacoco,github actions
+spring-projects/spring-data-jpa,https://github.com/spring-projects/spring-data-jpa,maven,jacoco,github actions
+spring-projects/spring-integration,https://github.com/spring-projects/spring-integration,gradle,jacoco,github actions
+spring-projects/spring-integration-samples,https://github.com/spring-projects/spring-integration-samples,gradle,jacoco,travis
+spring-projects/spring-kafka,https://github.com/spring-projects/spring-kafka,gradle,jacoco,github actions
+spring-projects/spring-petclinic,https://github.com/spring-projects/spring-petclinic,maven,jacoco,travis
+stleary/JSON-java,https://github.com/stleary/JSON-java,maven,jacoco,github actions
+swagger-api/swagger-core,https://github.com/swagger-api/swagger-core,maven,jacoco,github actions
+TeamAmaze/AmazeFileManager,https://github.com/TeamAmaze/AmazeFileManager,gradle,jacoco,github actions
+TEAMMATES/teammates,https://github.com/TEAMMATES/teammates,gradle,jacoco,github actions
+trinodb/trino,https://github.com/trinodb/trino,maven,jacoco,github actions
+tronprotocol/java-tron,https://github.com/tronprotocol/java-tron,gradle,jacoco,travis
+tuguangquan/mybatis,https://github.com/tuguangquan/mybatis,maven,cobertura,travis
+web3j/web3j,https://github.com/web3j/web3j,gradle,jacoco,github actions/travis
+wildfly/wildfly,https://github.com/wildfly/wildfly,maven,jacoco/cobertura,github actions
+xuhuisheng/lemon,https://github.com/xuhuisheng/lemon,maven,jacoco,travis
+zxing/zxing,https://github.com/zxing/zxing,maven,jacoco,github actions/travis
