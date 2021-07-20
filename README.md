@@ -1,29 +1,34 @@
 # Optimizing CI Builds
 
-## Steps
-
-**1. Finding Java Maven repositories that uses Jacoco in Github.**
-
-A python script is used to find the most forked 420 public java repositories in Github. Subsequently, these projects were filtered according to whether or not they had a pom.xml file in their root directory. In the remaining projects, the pom.xml file was searched for the keyword **"org.jacoco"**. Finally, the results were saved in the data.csv file.
 
 ## Issues
 
-**1. Duplicates in the data.csv file**
+1. Duplicates in the data.csv file (should figure it out why!)
 
-I don't know why, but there are projects written more than once in the data.csv file.
+2. Searching for pom.xml and build.gradle in the root directory (fine for now, can be improved in the future)
 
-**2. pom.xml in root directory**
+3. For the search API first 1000 repositories allowed (cannot get more than 1000 projects)
 
-The written python script only searches for pom.xml files in the root directory. Maybe there are pom.xml files in other directories as well.
 
-## Improvements
+## Improvements (for now)
 
-**1. Add check for Cobertura**
+1. Figuring a way to filter out non-active projects
 
-**2. Fix data filtering**
+2. Do we need atomicity in data.csv?
 
-**3. Add check for Gradle as well**
 
-**4. Fix data.csv table as repo_name, repo_link, build_tool, ci_tool**
+## Improvements (for the future)
 
-**5. Check for Travis and Github Actions**
+1. May have better data filtering
+
+2. May add more options for coverage and continuous integration tools
+
+
+## Links to read
+
+1. https://www.freecodecamp.org/news/how-to-generate-code-coverage-report-with-codecov-and-github-actions/
+
+2. https://blog.codecentric.de/en/2021/02/github-actions-pipeline/
+
+3. https://graciano.dev/2020/08/25/use-jacoco-and-github-actions-to-improve-code-coverage/
+
