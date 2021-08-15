@@ -51,26 +51,18 @@ for repository in filtered_repositories:
     if repository["travis"] == "Yes":
         response = requests.get(url="https://api.github.com/repos/"+ repository["name"] +"/contents/.travis.yml", headers=headers).json()
         content = base64.b64decode(response["content"]).decode("utf-8").lower()
-        defaultDic = {"yCodecov": "No", "yCoveralls": "No", "yJacoco": "No", "yCobertura": "No", "yJavadoc": "No", "fileName": "", "mvnOrMvnw": "No", "suspicious": "No"}
+        defaultDic = {"yCodecov": "No", "yCoveralls": "No", "ySonar": "No", "yJacoco": "No", "yCobertura": "No", "yJavadoc": "No", "fileName": "", "mvnOrMvnw": "No", "candidate": "No"}
         if "codecov" in content:
             defaultDic["yCodecov"] = "Yes"
         if "coveralls" in content:
             defaultDic["yCoveralls"] = "Yes"
-        if (
-            repository["pJacoco"] == "Yes"
-            and ("jacoco" in content)
-            and not (
-            ("jacoco.skip" in content) or ("jacoco.skip=true" in content))
-        ):
+        if "sonar" in content:
+            defaultDic["ySonar"] = "Yes"
+        if ("jacoco" in content) and not (("jacoco.skip" in content) or ("jacoco.skip=true" in content)):
             defaultDic["yJacoco"] = "Yes"
-        if repository["pCobertura"] == "Yes" and ("cobertura" in content):
+        if "cobertura" in content:
             defaultDic["yCobertura"] = "Yes"
-        if (
-            repository["pJavadoc"] == "Yes"
-            and ("javadoc" in content)
-            and not (
-            ("javadoc.skip" in content) or ("javadoc.skip=true" in content))
-            ):
+        if  ("javadoc" in content) and not (("javadoc.skip" in content) or ("javadoc.skip=true" in content)):
             defaultDic["yJavadoc"] = "Yes"
         if ("mvn" in content) or ("mvnw" in content):
             defaultDic["mvnOrMvnw"] = "Yes"
@@ -82,26 +74,18 @@ for repository in filtered_repositories:
         for w_file in w_files:
             response = requests.get(url="https://api.github.com/repos/"+ repository["name"] +"/contents/.github/workflows/" + w_file["name"], headers=headers).json()
             content = base64.b64decode(response["content"]).decode("utf-8").lower()
-            defaultDic = {"yCodecov": "No", "yCoveralls": "No", "yJacoco": "No", "yCobertura": "No", "yJavadoc": "No", "fileName": "", "mvnOrMvnw": "No", "suspicious": "No"}
+            defaultDic = {"yCodecov": "No", "yCoveralls": "No", "ySonar": "No", "yJacoco": "No", "yCobertura": "No", "yJavadoc": "No", "fileName": "", "mvnOrMvnw": "No", "candidate": "No"}
             if "codecov" in content:
                 defaultDic["yCodecov"] = "Yes"
             if "coveralls" in content:
                 defaultDic["yCoveralls"] = "Yes"
-            if (
-                repository["pJacoco"] == "Yes"
-                and ("jacoco" in content)
-                and not (
-                ("jacoco.skip" in content) or ("jacoco.skip=true" in content))
-            ):
+            if "sonar" in content:
+                defaultDic["ySonar"] = "Yes"
+            if ("jacoco" in content) and not (("jacoco.skip" in content) or ("jacoco.skip=true" in content)):
                 defaultDic["yJacoco"] = "Yes"
-            if repository["pCobertura"] == "Yes" and ("cobertura" in content):
+            if "cobertura" in content:
                 defaultDic["yCobertura"] = "Yes"
-            if (
-            repository["pJavadoc"] == "Yes"
-            and ("javadoc" in content)
-            and not (
-            ("javadoc.skip" in content) or ("javadoc.skip=true" in content))
-            ):
+            if  ("javadoc" in content) and not (("javadoc.skip" in content) or ("javadoc.skip=true" in content)):
                 defaultDic["yJavadoc"] = "Yes"
             if ("mvn" in content) or ("mvnw" in content):
                 defaultDic["mvnOrMvnw"] = "Yes"
@@ -110,29 +94,29 @@ for repository in filtered_repositories:
     print("Second method")
     print(repository)
 
-""" if mvnOrMvnw no then not suspicious """
-""" else if codecov or coveralls not suspicious """
-""" else if jacoco or cobertura or javadoc extremely suspicious """
-""" else might be suspicious """
+""" if mvnOrMvnw no then not candidate """
+""" else if codecov or coveralls or sonar not candidate """
+""" else if jacoco or cobertura or javadoc most likely candidate """
+""" else might be candidate """
 
 for repository in filtered_repositories:
     for file in repository["ymlFiles"]:
         if file["mvnOrMvnw"] == "No":
             continue
-        elif (file["yCodecov"] == "Yes") or (file["yCoveralls"] == "Yes"):
+        elif (file["yCodecov"] == "Yes") or (file["yCoveralls"] == "Yes") or (file["ySonar"] == "Yes"):
             continue
         elif (file["yJacoco"] == "Yes") or (file["yCobertura"] == "Yes") or (file["yJavadoc"] == "Yes"):
-            file["suspicious"] = "Yes"
+            file["candidate"] = "Yes"
         else:
-            file["suspicious"] = "Maybe"
+            file["candidate"] = "Maybe"
 
 
-with open("03-08-data.csv", "w", newline="") as csv_file:
+with open("15-08-data.csv", "w", newline="") as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(["project-name", "pom-jacoco", "pom-cobertura", "pom-javadoc", "travis", "gha", "file-name", "yml-codecov", "yml-coveralls", 
-    "yml-jacoco", "yml-cobertura", "yml-javadoc", "mvn-mvnw", "suspicious"])
+    "yml-sonar", "yml-jacoco", "yml-cobertura", "yml-javadoc", "mvn-mvnw", "candidate"])
     for repository in filtered_repositories:
         for files in repository["ymlFiles"]:
             csv_writer.writerow([repository["name"], repository["pJacoco"], repository["pCobertura"], repository["pJavadoc"], repository["travis"], 
-            repository["gha"], files["fileName"], files["yCodecov"], files["yCoveralls"], files["yJacoco"], files["yCobertura"], files["yJavadoc"], 
-            files["mvnOrMvnw"], files["suspicious"]])
+            repository["gha"], files["fileName"], files["yCodecov"], files["yCoveralls"], files["ySonar"], files["yJacoco"], files["yCobertura"], files["yJavadoc"], 
+            files["mvnOrMvnw"], files["candidate"]])
